@@ -1,6 +1,6 @@
 // main.js - código malicioso para ler e retornar o arquivo flag.txt
 const fs = require('fs');
-const path = '/path/to/flag.txt'; // Substitua pelo caminho correto do arquivo
+const path = '/flag.txt'; // Substitua pelo caminho correto do arquivo
 
 // Ler o conteúdo do arquivo
 const content = fs.readFileSync(path, 'utf8');

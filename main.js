@@ -2,8 +2,11 @@
 const fs = require('fs');
 const path = 'flag.txt'; // Substitua pelo caminho correto do arquivo
 
-// Ler o conteúdo do arquivo
-const content = fs.readFileSync(path, 'utf8');
+console.log('Tentando ler o arquivo:', path);
 
-// Exibir o conteúdo do arquivo (assumindo que o servidor imprime o conteúdo de stdout)
-console.log(content);
+try {
+    const content = fs.readFileSync(path, 'utf8');
+    console.log('Conteúdo do arquivo:', content);
+} catch (error) {
+    console.error('Erro ao ler o arquivo:', error.message);
+}
